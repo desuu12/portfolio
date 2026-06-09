@@ -1,0 +1,14 @@
+# environment variables - never commit these
+.env
+.env.local
+.env.production
+
+# dependencies
+node_modules/
+
+# build output
+dist/
+
+# editor
+.vscode/
+.idea/
