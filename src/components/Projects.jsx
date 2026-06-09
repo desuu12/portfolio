@@ -34,7 +34,7 @@ const projects = [
     emoji: '🌐',
     tags: ['React', 'Tailwind CSS', 'Vite', 'EmailJS', 'Framer Motion'],
     github: 'https://github.com/desuu12',
-    demo: null,
+    demo: 'https://desalegn-dev.netlify.app',
     color: 'from-green-500 to-teal-500',
     badge: 'Frontend',
   },
@@ -132,7 +132,7 @@ export default function Projects({ dark }) {
                   >
                     <FiGithub size={16} /> GitHub
                   </a>
-                  {project.demo ? (
+                  {project.demo && (
                     <a
                       href={project.demo}
                       target="_blank"
@@ -141,10 +141,6 @@ export default function Projects({ dark }) {
                     >
                       <FiExternalLink size={16} /> Live Demo
                     </a>
-                  ) : (
-                    <span className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium ${dark ? 'text-gray-500' : 'text-gray-400'}`}>
-                      <FiExternalLink size={16} /> Coming Soon
-                    </span>
                   )}
                 </div>
               </div>
