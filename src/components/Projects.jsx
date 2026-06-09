@@ -120,18 +120,26 @@ export default function Projects({ dark }) {
 
                 {/* Buttons */}
                 <div className="flex gap-3">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-all hover:-translate-y-0.5 ${
-                      dark
-                        ? 'bg-gray-700 text-gray-200 hover:bg-gray-600'
-                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                    }`}
-                  >
-                    <FiGithub size={16} /> GitHub
-                  </a>
+                  {project.github ? (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-all hover:-translate-y-0.5 ${
+                        dark
+                          ? 'bg-gray-700 text-gray-200 hover:bg-gray-600'
+                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                      }`}
+                    >
+                      <FiGithub size={16} /> GitHub
+                    </a>
+                  ) : (
+                    <span className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium ${
+                      dark ? 'text-gray-500' : 'text-gray-400'
+                    }`}>
+                      <FiExternalLink size={16} /> Coming Soon
+                    </span>
+                  )}
                   {project.demo && (
                     <a
                       href={project.demo}
