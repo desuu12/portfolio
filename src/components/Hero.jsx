@@ -118,10 +118,11 @@ export default function Hero({ dark }) {
               className="p-3 rounded-full bg-gray-800 text-gray-300 hover:text-blue-400 hover:bg-gray-700 transition-all hover:-translate-y-1">
               <FaTelegram size={20} />
             </a>
-            <a href="mailto:desalegndrj11@gmail.com"
-              className="p-3 rounded-full bg-gray-800 text-gray-300 hover:text-red-400 hover:bg-gray-700 transition-all hover:-translate-y-1 email-animate">
+            <button
+              onClick={() => window.open('https://mail.google.com/mail/?view=cm&to=desalegndrj11@gmail.com', '_blank')}
+              className="p-3 rounded-full bg-gray-800 text-gray-300 hover:text-red-400 hover:bg-gray-700 transition-all hover:-translate-y-1">
               <FiMail size={20} />
-            </a>
+            </button>
           </div>
         </div>
 

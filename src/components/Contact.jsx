@@ -7,11 +7,11 @@ const contactInfo = [
   {
     icon: FiMail,
     label: 'Email',
-    value: 'desalegndrj11@gmail.com',
-    href: 'mailto:desalegndrj11@gmail.com',
+    value: 'desalegndrj11 [at] gmail.com',
+    href: 'https://mail.google.com/mail/?view=cm&to=desalegndrj11@gmail.com',
     color: 'text-red-400',
     bg: 'bg-red-500/10',
-    animate: true,
+    animate: false,
   },
   {
     icon: FiPhone,
@@ -119,7 +119,7 @@ export default function Contact({ dark }) {
                 <a
                   key={label}
                   href={href}
-                  target={href.startsWith('http') ? '_blank' : undefined}
+                  target="_blank"
                   rel="noreferrer"
                   className={`flex items-center gap-4 p-4 rounded-xl transition-all card-hover ${
                     dark ? 'bg-gray-800 hover:bg-gray-700' : 'bg-gray-50 hover:bg-gray-100'
@@ -146,11 +146,11 @@ export default function Contact({ dark }) {
                 Quick Connect
               </p>
               <div className="flex gap-3">
-                <a href="mailto:desalegndrj11@gmail.com"
-                  className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-sm font-semibold hover:shadow-lg hover:shadow-blue-500/30 transition-all hover:-translate-y-0.5"
-                  target="_blank" rel="noreferrer">
+                <button
+                  onClick={() => window.open('https://mail.google.com/mail/?view=cm&to=desalegndrj11@gmail.com', '_blank')}
+                  className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-sm font-semibold hover:shadow-lg hover:shadow-blue-500/30 transition-all hover:-translate-y-0.5">
                   <FiMail size={16} /> Email Me
-                </a>
+                </button>
                 <a href="https://t.me/desaddis11" target="_blank" rel="noreferrer"
                   className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-semibold transition-all hover:-translate-y-0.5 ${
                     dark ? 'bg-gray-700 text-blue-400 hover:bg-gray-600' : 'bg-white text-blue-600 border border-blue-200 hover:bg-blue-50'
