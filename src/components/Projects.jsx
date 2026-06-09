@@ -137,18 +137,8 @@ export default function Projects({ dark }) {
                     <span className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium ${
                       dark ? 'text-gray-500' : 'text-gray-400'
                     }`}>
-                      <FiExternalLink size={16} /> Coming Soon
+                      Coming Soon
                     </span>
-                  )}
-                  {project.demo && (
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-gradient-to-r from-blue-500 to-indigo-600 text-white hover:shadow-lg hover:shadow-blue-500/30 transition-all hover:-translate-y-0.5"
-                    >
-                      <FiExternalLink size={16} /> Live Demo
-                    </a>
                   )}
                 </div>
               </div>
