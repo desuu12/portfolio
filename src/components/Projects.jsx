@@ -34,7 +34,7 @@ const projects = [
     emoji: '🌐',
     tags: ['React', 'Tailwind CSS', 'Vite', 'EmailJS', 'Framer Motion'],
     github: 'https://github.com/desuu12',
-    demo: 'https://desalegn-dev.netlify.app',
+    demo: 'https://desalegnp.netlify.app',
     color: 'from-green-500 to-teal-500',
     badge: 'Frontend',
   },

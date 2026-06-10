@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio website built with **React** and **Tailwind CSS**, featuring smooth animations, dark mode, and a fully working contact form.
 
-🌐 **Live Site:** [desalegn-dev.netlify.app](https://desalegn-dev.netlify.app)
+🌐 **Live Site:** [desalegnp.netlify.app](https://desalegnp.netlify.app)
 
 ---
 
